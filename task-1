@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+void hesab(int x,int y){
+int a = x + y;
+int b = x - y;
+int c = x * y;
+int d = x % y;
+cout << "Cem = " << a << endl;
+cout << "Ferq = " << b << endl;
+cout << "Hasil = " << c << endl;
+cout << "bölmə = " << d << endl;
+}
+int main() {
+ int x,y;
+ cout <<"iki eded daxil edin:";
+ cin >>x>>y;
+ hesab(x,y);
+
+    return 0;
+}
