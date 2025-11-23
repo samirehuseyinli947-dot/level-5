@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+void müqayisə(int x){
+if(x>0)
+  cout << "ədəd müsbətdir";
+else if(x<0)
+  cout << "ədəd mənfidir";
+else
+  cout << "ədəd sıfırdır";
+}
+int main() {
+ int x;
+ cout <<"ədəd daxil edin:";
+ cin >>x;
+ müqayisə(x);
+
+    return 0;
+}
