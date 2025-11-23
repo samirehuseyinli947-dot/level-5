@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int rəqəmcəm(int x){
+    int sum=0;
+    while (x>0){
+    int n=x%10;
+    x=x/10;
+    sum=sum+n;
+    }
+    return sum;
+}
+int main() {
+    int x;
+cout << "ədəd daxil edin:";
+cin >> x;
+
+cout << " rəqəmlərin cəmi=" << rəqəmcəm(x);
+    return 0;
+}
