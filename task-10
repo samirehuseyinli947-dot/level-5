@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+bool armstrong(int x){
+    int b = x;
+        int sum = 0;
+        while (b > 0) {
+            int q = b % 10;
+            sum = sum + q * q * q;  
+            b = b / 10;
+        }
+        return(sum==x);
+}
+int main() {
+    for (int a = 100; a < 1000; ++a) {  
+        
+        if (armstrong(a)){
+            cout << a << " ";
+    }
+    }
+    return 0;
+}
