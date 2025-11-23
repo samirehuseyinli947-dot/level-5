@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+void say(int N){
+    for (int i = 2; i < N; i++) {
+        int say = 0;
+        for (int j = 1; j <= i; j++) {
+            if (i % j == 0)
+                say++;
+        }
+        if (say == 2)
+            cout << i << " ";
+    }
+}
+int main() {
+    int N;
+    cout << "N daxil edin: ";
+    cin >> N;
+    say(N);
+    return 0;
+}
