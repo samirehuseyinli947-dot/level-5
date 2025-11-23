@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int faktorial(int x){
+int f=1;
+for (int i=1;i<=x;i++){
+    f=f*i;
+}
+return f;
+}
+int main() {
+ int a;
+ cout <<"ədəd daxil edin:";
+ cin >>a;
+ cout << "faktorial="<< faktorial(a);
+    return 0;
+}
