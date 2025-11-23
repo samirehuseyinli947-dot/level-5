@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int rəqəminəksi(int x){
+    int əks=0;
+    int n=1;
+    while(x>0){
+        n=x%10;
+        x=x/10;
+        əks=əks*10+n;
+    }
+    return əks;
+}
+int main() {
+    int x;
+    cout << "ədəd daxil edin:";
+    cin >> x;
+    cout <<"rəqəmin əksi=" <<rəqəminəksi(x);
+return 0;
+}
