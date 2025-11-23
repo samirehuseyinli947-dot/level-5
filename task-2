@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+void müqayisə(int x,int y){
+if(x>y)
+  cout << "böyük ədəd="<< x;
+else if(y>x)
+  cout << "böyük ədəd="<< y;
+else
+  cout << "ədədlrt bərabardir";
+}
+int main() {
+ int x,y;
+ cout <<"iki eded daxil edin:";
+ cin >>x>>y;
+ müqayisə(x,y);
+
+    return 0;
+}
